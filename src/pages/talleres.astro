@@ -1,0 +1,47 @@
+---
+import Layout from "../layouts/Layout.astro";
+import TarjetaTaller from "../components/TarjetaTaller.astro";
+---
+
+<Layout
+    title="Talleres | Espacio Cultural"
+    description="Conoce nuestras actividades artísticas y creativas."
+>
+    <section class="page-banner">
+        <span class="eyebrow">Aprende algo nuevo</span>
+        <h1>Talleres para despertar tu creatividad</h1>
+        <p>
+            Ofrecemos experiencias para explorar tus intereses, desarrollar
+            habilidades y compartir con la comunidad.
+        </p>
+    </section>
+
+    <section class="section">
+        <div class="workshop-grid">
+            <TarjetaTaller
+                nombre="Fotografía"
+                descripcion="Aprende composición, iluminación y técnicas para capturar momentos especiales."
+                imagen="/img/fotografia.svg"
+                etiqueta="Arte visual"
+            />
+            <TarjetaTaller
+                nombre="Cerámica"
+                descripcion="Experimenta con arcilla, formas y texturas para crear tus propias piezas."
+                imagen="/img/ceramica.svg"
+                etiqueta="Arte manual"
+            />
+            <TarjetaTaller
+                nombre="Escritura creativa"
+                descripcion="Explora la narración, los personajes y la creación de historias originales."
+                imagen="/img/escritura.svg"
+                etiqueta="Literatura"
+            />
+            <TarjetaTaller
+                nombre="Ilustración"
+                descripcion="Expresa tus ideas mediante dibujos, colores y diferentes técnicas visuales."
+                imagen="/img/ilustracion.svg"
+                etiqueta="Dibujo"
+            />
+        </div>
+    </section>
+</Layout>

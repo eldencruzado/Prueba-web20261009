@@ -1,0 +1,25 @@
+---
+interface Props {
+    nombre: string;
+    descripcion: string;
+    imagen: string;
+    etiqueta?: string;
+}
+
+const {
+    nombre,
+    descripcion,
+    imagen,
+    etiqueta = "Taller cultural",
+} = Astro.props;
+---
+
+<article class="workshop-card">
+    <img src={imagen} alt={nombre} loading="lazy" />
+
+    <div class="workshop-content">
+        <span class="tag">{etiqueta}</span>
+        <h3>{nombre}</h3>
+        <p>{descripcion}</p>
+    </div>
+</article>
